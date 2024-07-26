@@ -1,0 +1,12 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="buttonStyle">@style/MyButtonStyle</item> <!-- Ensure this does not interfere with your drawable -->
+    </style>
+
+    <style name="MyButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@null</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+</resources>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E0F7FA">
+
+    <TextView
+        android:id="@+id/tvTasksTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:text="Tasks"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/taskTabsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvTasksTitle"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnUpcomingTasks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab_background_upcoming"
+            android:text="Upcoming"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnDueTodayTasks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Due Today"
+            android:background="@drawable/tab_background_due_today"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnOverdueTasks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Overdue"
+            android:background="@drawable/tab_background_overdue"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskTabsContainer"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:background="@drawable/rounded_button_grey"
+        android:paddingBottom="100dp"/>
+
+</RelativeLayout>

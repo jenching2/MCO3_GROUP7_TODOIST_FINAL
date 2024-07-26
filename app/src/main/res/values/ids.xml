@@ -1,0 +1,7 @@
+<!-- res/values/ids.xml -->
+<resources>
+    <item name="nav_tasks" type="id" />
+    <item name="nav_calendar" type="id" />
+    <item name="nav_notifications" type="id" />
+    <item name="nav_logout" type="id" />
+</resources>

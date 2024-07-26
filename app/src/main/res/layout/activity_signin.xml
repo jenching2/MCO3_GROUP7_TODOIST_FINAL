@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2C94C"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/signInForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etFullNameSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/etPhoneSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/etPasswordSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button_red"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't Have an account? Register"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_textview"/>
+    </LinearLayout>
+</RelativeLayout>

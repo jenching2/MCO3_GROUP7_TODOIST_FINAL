@@ -1,0 +1,62 @@
+<resources>
+
+    <string-array name="countries_array">
+        <item>Philippines</item>
+        <item>USA</item>
+        <item>Canada</item>
+    </string-array>
+
+    <string-array name="cities_array">
+        <item>Pasay City</item>
+        <item>New York</item>
+        <item>Toronto</item>
+    </string-array>
+
+    <string name="app_name">YourAppName</string>
+    <string name="notification_time_format">%d min</string>
+
+    <string name="tasks">Tasks</string>
+    <string name="profile_picture_desc">Profile Picture</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="due_today">Due Today</string>
+    <string name="overdue">Overdue</string>
+    <string name="upcoming_tasks">Upcoming Tasks</string>
+    <string name="due_today_tasks">Due Today Tasks</string>
+    <string name="overdue_tasks">Overdue Tasks</string>
+    <string name="no_tasks_image">No Tasks Image</string>
+    <string name="no_tasks_message">You\'re all caught up!\nCome back later for Reminders and New Tasks! Good Job!</string>
+
+    <!-- Added Strings -->
+    <string name="task_overview">Task Overview</string>
+    <string name="due_today_count">3\nDue Today</string>
+    <string name="upcoming_count">5\nUpcoming</string>
+    <string name="overdue_count">1\nOverdue</string>
+    <string name="add_task">Add Task</string>
+    <string name="profile_image_desc">Profile Image</string>
+    <string name="add_task_image_desc">Add Task Image</string>
+    <string name="calendar_title">June 2024</string>
+    <string name="back_button_desc">Back</string>
+    <string name="add_task_desc">Add Task</string>
+    <string name="sign_in">Sign In</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="dont_have_account_register">Don\'t Have an account? Register</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="no_tasks_available">No tasks available</string>
+    <string name="profile_picture_description">Profile picture</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="have_account_sign_in">Have an account? Sign In</string>
+    <string name="welcome_back">Welcome Back, [User]!</string>
+    <string name="menu_icon_desc">Menu Icon</string>
+    <string name="add_icon_desc">Add Icon</string>
+    <string name="date_and_time">Date and Time</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_description">Task Description</string>
+    <string name="not_started">Not yet started</string>
+    <string name="in_progress">In Progress</string>
+    <string name="done">Done</string>
+    </resources>
+

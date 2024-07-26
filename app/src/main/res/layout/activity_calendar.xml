@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA"
+    android:padding="16dp"
+    tools:context=".CalendarActivity">
+
+    <TextView
+        android:id="@+id/tvMonthYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMonthYear"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:dateTextAppearance="?android:attr/textAppearanceMedium"
+        android:layout_centerHorizontal="true"
+        android:focusedMonthDateColor="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/todayTasksContainer"
+        android:layout_width="384dp"
+        android:layout_height="296dp"
+        android:layout_below="@id/calendarView"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/rounded_background_box">
+
+        <TextView
+            android:id="@+id/tvToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Today"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Tasks for today"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@id/btnAddTask"
+            android:layout_below="@id/tvTasks"
+            android:layout_marginTop="16dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTasks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnAddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_button"
+            android:text="Add Task"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</RelativeLayout>
